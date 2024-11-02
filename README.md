@@ -1,1 +1,1 @@
-# CI_workshops
+# workshops
