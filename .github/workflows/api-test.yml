@@ -3,10 +3,8 @@ env:
     SECRET_PASSWORD: ${{ secrets.SECRET_PASS }}
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: "0 12,14,16 * * 1-5"
 
 jobs:
   build:
