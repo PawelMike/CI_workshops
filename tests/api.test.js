@@ -83,11 +83,11 @@ describe("API test", () => {
 
   it("Delete all books", async () => {
     const response = await spec()
-      .delete(`${baseURL}/BookStore/v1/Books/${userID}`)
-      .withBearerToken(token_response)
-      .inspect();
-    expect(response.statusCode).to.eql(204);
-  });
+    .delete(`${baseURL}/BookStore/v1/Books?UserId=${userID}`)
+    .inspect()
+    .withBearerToken(token_response)
+    expect(response.statusCode).to.eql(204)
+  })
 
   it("User books", async () => {
     const response = await spec()
