@@ -28,7 +28,6 @@ jobs:
     - run: npm ci
     - run: npm test
     - name: Upload Mochawesome Report 
-    if: always() # Ensures that upload report even if tests fail
       uses: actions/upload-artifact@v4 
       with: 
         name: mochawesome-report 
