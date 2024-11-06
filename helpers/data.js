@@ -3,4 +3,3 @@ export const baseURL = "https://demoqa.com"
 export const user = "test_warez_pmqa"
 export const password = process.env.SECRET_PASSWORD
 export const book_isbn = 9781449331818
-export const testowa_stala = "test"
